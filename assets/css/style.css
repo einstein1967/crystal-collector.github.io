@@ -1,0 +1,71 @@
+header {
+    background: #cb6f34;
+    width: 25%;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px
+     0 0 10px;
+}
+
+.instr {
+    background: #fbe6cf;
+    width: 34%;
+    margin: 10px 0 0 10px;
+    color: #21ac31;
+    padding-left: 10px; 
+}
+
+.random {
+    background: #53c987;
+    width: 15%;
+    height: 100px;
+    float: left;
+    margin: 10px 0 0 10px;
+    padding-left: 10px; 
+}
+
+.outcomes {
+    background: #3afdfa;
+    width: 6%;
+    height: 100px;
+    float: left;
+    margin: 10px 0 0 10px;  
+    padding-left: 10px; 
+}
+
+.gems {
+    height: 110px;
+}
+
+/* #gem-1 {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 0 10px;
+}
+ */
+#gem-1,
+#gem-2,
+#gem-3,
+#gem-4 {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0 0 10px;  
+    float: left;
+}
+
+.scoreText {
+    background: #20a295;
+    width: 15%;
+    color: white;
+    margin: 10px 0 0 10px;
+    padding-left: 10px; 
+}
+
+.totalScore {
+    background: #20a295;
+    width: 15%;
+    height: 100px;
+    color: white;
+    margin: 10px 0 0 10px;
+    padding-left: 10px;
+}
