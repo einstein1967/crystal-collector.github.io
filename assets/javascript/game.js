@@ -2,40 +2,38 @@ $(document).ready(function () {
 
     var wins = 0;
     var losses = 0;
-    var current = 0;
     var totalScore = 0;
-    var clicks = 0;
     var totalScore = 0;
     var target = 0;
     var amber;
     var emerald;
     var ruby;
     var sapphire;
-    var gemValues = [];
-
-    amber = Math.floor(Math.random() * 12) + 1;
-    emerald = Math.floor(Math.random() * 12) + 1;
-    ruby = Math.floor(Math.random() * 12) + 1;
-    sapphire = Math.floor(Math.random() * 12) + 1;
-    target = Math.floor(Math.random() * 102) + 19;
-
-    console.log(amber);
-    console.log(emerald);
-    console.log(ruby);
-    console.log(sapphire);
-
 
     var reset = function () {
+        var colorArr = [];
         amber = Math.floor(Math.random() * 12) + 1;
+        colorArr.push(amber);
         emerald = Math.floor(Math.random() * 12) + 1;
+        if (!colorArr.includes(emerald)) {
+            colorArr.push(emerald);
+        }else{
+            reset();
+        }
         ruby = Math.floor(Math.random() * 12) + 1;
+        if (!colorArr.includes(ruby)) {
+            colorArr.push(ruby);
+        }else{
+            reset();
+        }
         sapphire = Math.floor(Math.random() * 12) + 1;
+        if (!colorArr.includes(sapphire)) {
+            colorArr.push(sapphire);
+        }else{
+            reset();
+        }
         target = Math.floor(Math.random() * 102) + 19;
         totalScore = 0;
-        console.log(amber);
-        console.log(emerald);
-        console.log(ruby);
-        console.log(sapphire);
         $("#current").text(totalScore);
         $("#target").text(target);
     }
@@ -89,5 +87,7 @@ $(document).ready(function () {
 
     $("#target").text(target);
     $("#current").text(totalScore);
+
+    reset();
 
 });

@@ -1,6 +1,15 @@
+.main {
+    border: 1px grey solid;
+    background-color: lightslategray;
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 header {
     background: #cb6f34;
-    width: 25%;
+    width: 40%;
     text-align: center;
     font-size: 30px;
     margin: 10px
@@ -9,7 +18,7 @@ header {
 
 .instr {
     background: #fbe6cf;
-    width: 34%;
+    width: 75%;
     margin: 10px 0 0 10px;
     color: #21ac31;
     padding-left: 10px; 
@@ -26,7 +35,7 @@ header {
 
 .outcomes {
     background: #3afdfa;
-    width: 6%;
+    width: 10%;
     height: 100px;
     float: left;
     margin: 10px 0 0 10px;  
@@ -37,35 +46,26 @@ header {
     height: 110px;
 }
 
-/* #gem-1 {
-    width: 100px;
-    height: 100px;
-    margin: 10px 0 0 10px;
-}
- */
 #gem-1,
 #gem-2,
 #gem-3,
 #gem-4 {
+    background-color: lightslategray;
     width: 100px;
     height: 100px;
     margin: 10px 0 0 10px;  
     float: left;
 }
 
-.scoreText {
+.scoreText,
+.totalScore {
     background: #20a295;
     width: 15%;
-    color: white;
+    color: black;
     margin: 10px 0 0 10px;
     padding-left: 10px; 
 }
 
 .totalScore {
-    background: #20a295;
-    width: 15%;
-    height: 100px;
-    color: white;
-    margin: 10px 0 0 10px;
-    padding-left: 10px;
+    height: 60px;
 }

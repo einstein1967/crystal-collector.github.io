@@ -12,45 +12,44 @@
 </head>
 
 <body>
+    <div class="main">
+        <header>
+            CrystalsCollector!
+        </header>
 
-    <header>
-        CrystalsCollector!
-    </header>
+        <script src="assets/javascript/game.js"></script>
 
-    <script src="assets/javascript/game.js"></script>
-
-    <div class="instr">
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
-            to your total score.</p>
-        <p>You win the round by matching your total score to the random number and you lose the round if
-            your total score goes above the random number.</p>
-        <p>The value of each crystal is hidden from you each round until you click on it.</p>
-        <p>The game will change the value of each crystal at the start of each round.</p>
+        <div class="instr">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                to your total score.</p>
+            <p>You win the round by matching your total score to the random number and you lose the round if
+                your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you each round until you click on it.</p>
+            <p>The game will change the value of each crystal at the start of each round.</p>
+        </div>
+        <div class="random">
+            <div><span id="target"></span></div>
+        </div>
+        <div class="outcomes">
+            <div><span id="win-lose"></span></div>
+            <div>Wins: <span id="wins"></span></div>
+            <div>Losses: <span id="losses"></span></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="gems">
+            <div><img id="gem-1" src="assets/images/amber.jpg"></div>
+            <div><img id="gem-2" src="assets/images/emerald.jpg"></div>
+            <div><img id="gem-3" src="assets/images/ruby.jpg"></div>
+            <div><img id="gem-4" src="assets/images/sapphire.jpg"></div>
+        </div>
+        <div class="scoreText">Your total score is:</div>
+        <div class="totalScore"><span id="current"></span></div>
     </div>
-    <div class="random">
-        <div><span id="target"></span></div>
-    </div>
-    <div class="outcomes">
-        <div><span id="win-lose"></span></div>
-        <div>Wins: <span id="wins"></span></div>
-        <div>Losses: <span id="losses"></span></div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="gems">
-        <div><img id="gem-1" src="assets/images/amber.jpg"></div>
-        <div><img id="gem-2" src="assets/images/emerald.jpg"></div>
-        <div><img id="gem-3" src="assets/images/ruby.jpg"></div>
-        <div><img id="gem-4" src="assets/images/sapphire.jpg"></div>
-    </div>
-    <div class="scoreText">Your total score is:</div>
-    <div class="totalScore"><span id="current"></span></div>
-
-
 </body>
 
 </html>
