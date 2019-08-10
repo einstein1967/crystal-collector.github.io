@@ -32,6 +32,7 @@ $(document).ready(function () {
         }else{
             reset();
         }
+        console.log(colorArr);
         target = Math.floor(Math.random() * 102) + 19;
         totalScore = 0;
         $("#current").text(totalScore);

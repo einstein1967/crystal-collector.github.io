@@ -17,15 +17,15 @@ header {
 }
 
 .instr {
-    background: #fbe6cf;
+    background: #cfd6fb8c;
     width: 75%;
     margin: 10px 0 0 10px;
-    color: #21ac31;
+    color: #2a21ac;
     padding-left: 10px; 
 }
 
 .random {
-    background: #53c987;
+    background: #3afdfa;
     width: 15%;
     height: 100px;
     float: left;
@@ -57,15 +57,10 @@ header {
     float: left;
 }
 
-.scoreText,
-.totalScore {
+.scoreText {
     background: #20a295;
     width: 15%;
     color: black;
     margin: 10px 0 0 10px;
     padding-left: 10px; 
-}
-
-.totalScore {
-    height: 60px;
 }
