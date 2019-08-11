@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CrystalsCollector!</title>
+    <title>Gem Collector!</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,44 +14,44 @@
 <body>
     <div class="main">
         <header>
-            CrystalsCollector!
+            Gem Collector!
         </header>
 
         <script src="assets/javascript/game.js"></script>
 
         <div class="instr">
-            <p>You will be given a random number at the start of the game.</p>
-            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
-                to your total score.</p>
-            <p>You win the round by matching your total score to the random number and you lose the round if
-                your total score goes above the random number.</p>
-            <p>The value of each crystal is hidden from you each round until you click on it.</p>
-            <p>The game will change the value of each crystal at the start of each round.</p>
+            <p>Click on the gems to try and hit the target score. Each has a different value from 1-12 and the values
+                change each round.</p>
+            <p>You win the round by matching your total score to the target score, randomly generated each round from
+                20-120, and you lose the round if
+                your total score goes above the target.</p>
+            <p>You won't know the value of each gem each round until you click on it and you'll have to remember the
+                value thru the round.</p>
         </div>
-        <div class="random">
-            <p>Target score:</p>
-            <div><span id="target"></span></div>
+        <div class="scores">
+            <div class="target">
+                <p>Target score:</p>
+                <div><span id="target"></span></div>
+            </div>
+            <div class="current">
+                <p>Current total:</p>
+                <div><span id="current"></span></div>
+            </div>
         </div>
-        <div class="outcomes">
-            <div><span id="win-lose"></span></div>
-            <div>Wins: <span id="wins"></span></div>
-            <div>Losses: <span id="losses"></span></div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <div class="gems">
             <div><img id="gem-1" src="assets/images/amber.jpg"></div>
             <div><img id="gem-2" src="assets/images/emerald.jpg"></div>
             <div><img id="gem-3" src="assets/images/ruby.jpg"></div>
             <div><img id="gem-4" src="assets/images/sapphire.jpg"></div>
         </div>
-        <div class="scoreText">Your total score is:
-            <div><span id="current"></span></div>
+        <div class="outcomes">
+            <div><span id="win"></span></div>
+            <div>Wins: <span id="wins"></span></div>
         </div>
-
+        <div class="outcomes">
+            <div><span id="lose"></span></div>
+            <div>Losses: <span id="losses"></span></div>
+        </div>
     </div>
 </body>
 

@@ -12,35 +12,38 @@ header {
     width: 40%;
     text-align: center;
     font-size: 30px;
-    margin: 10px
-     0 0 10px;
+    margin: 0 auto;
 }
 
 .instr {
     background: #cfd6fb8c;
     width: 75%;
-    margin: 10px 0 0 10px;
+    margin: 0 auto;
+    margin-top: 30px;
     color: #2a21ac;
     padding-left: 10px; 
 }
 
-.random {
+.target,
+.current,
+.outcomes {
     background: #3afdfa;
     width: 15%;
-    height: 100px;
-    float: left;
-    margin: 10px 0 0 10px;
-    padding-left: 10px; 
+    height: 90px;
+    margin: 10px 0 0 174px;
+    padding-left: 10px;
+    display: inline-block;
 }
 
-.outcomes {
+/* .outcomes {
     background: #3afdfa;
     width: 10%;
     height: 100px;
-    float: left;
-    margin: 10px 0 0 10px;  
-    padding-left: 10px; 
-}
+    margin-left: 195px; 
+    margin-top: 20px; 
+    padding-left: 10px;
+    display: inline-block;
+} */
 
 .gems {
     height: 110px;
@@ -53,14 +56,11 @@ header {
     background-color: lightslategray;
     width: 100px;
     height: 100px;
-    margin: 10px 0 0 10px;  
+    margin: 20px 0 10px 10px;  
     float: left;
 }
 
-.scoreText {
-    background: #20a295;
-    width: 15%;
-    color: black;
-    margin: 10px 0 0 10px;
-    padding-left: 10px; 
+#gem-1 {
+    margin-left: 155px;
 }
+
