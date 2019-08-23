@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="main">
+    <div class="main container">
         <header>
             Gem Collector!
         </header>
@@ -28,29 +28,39 @@
             <p>You won't know the value of each gem each round until you click on it and you'll have to remember the
                 value thru the round.</p>
         </div>
-        <div class="scores">
-            <div class="target">
+        <div class="row scores">
+            <div class="col-md-3"></div>
+            <div class="col-md-1 sm-box">
                 <p>Target score:</p>
                 <div><span id="target"></span></div>
             </div>
-            <div class="current">
+            <div class="col-md-3"></div>
+            <div class="col-md-1 sm-box">
                 <p>Current total:</p>
                 <div><span id="current"></span></div>
             </div>
+            <div class="col-md-3"></div>
         </div>
-        <div class="gems">
-            <div><img id="gem-1" src="assets/images/amber.jpg"></div>
-            <div><img id="gem-2" src="assets/images/emerald.jpg"></div>
-            <div><img id="gem-3" src="assets/images/ruby.jpg"></div>
-            <div><img id="gem-4" src="assets/images/sapphire.jpg"></div>
+        <div class="row scores">
+            <div class="col-md-4"></div>
+            <div class="col-md-1"><img id="gem-1" src="assets/images/amber.jpg"></div>
+            <div class="col-md-1"><img id="gem-2" src="assets/images/emerald.jpg"></div>
+            <div class="col-md-1"><img id="gem-3" src="assets/images/ruby.jpg"></div>
+            <div class="col-md-1"><img id="gem-4" src="assets/images/sapphire.jpg"></div>
+            <div class="col-md-4"></div>
         </div>
-        <div class="outcomes">
-            <div><span id="win"></span></div>
-            <div>Wins: <span id="wins"></span></div>
-        </div>
-        <div class="outcomes">
-            <div><span id="lose"></span></div>
-            <div>Losses: <span id="losses"></span></div>
+        <div class="row scores">
+            <div class="col-md-3"></div>
+            <div class="col-md-1 sm-box">
+                <div><span id="win"></span></div>
+                <div>Wins: <span id="wins"></span></div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-1 sm-box">
+                <div><span id="lose"></span></div>
+                <div>Losses: <span id="losses"></span></div>
+            </div>
+            <div class="col-md-3"></div>
         </div>
     </div>
 </body>

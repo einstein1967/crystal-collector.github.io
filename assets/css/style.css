@@ -13,6 +13,13 @@ header {
     text-align: center;
     font-size: 30px;
     margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.scores {
+    display: inline-block;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
 .instr {
@@ -24,15 +31,11 @@ header {
     padding-left: 10px; 
 }
 
-.target,
-.current,
-.outcomes {
+.sm-box {
     background: #3afdfa;
-    width: 15%;
-    height: 90px;
-    margin: 10px 0 0 174px;
+    width: 50%;
+    margin: 0 auto;
     padding-left: 10px;
-    display: inline-block;
 }
 
 /* .outcomes {
@@ -45,22 +48,10 @@ header {
     display: inline-block;
 } */
 
-.gems {
-    height: 110px;
-}
-
 #gem-1,
 #gem-2,
 #gem-3,
 #gem-4 {
-    background-color: lightslategray;
-    width: 100px;
     height: 100px;
-    margin: 20px 0 10px 10px;  
-    float: left;
+    width: 150%;
 }
-
-#gem-1 {
-    margin-left: 155px;
-}
-
